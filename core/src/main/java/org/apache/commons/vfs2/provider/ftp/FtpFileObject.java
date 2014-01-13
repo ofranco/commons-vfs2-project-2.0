@@ -271,7 +271,7 @@ public class FtpFileObject extends AbstractFileObject
     @Override
     protected void onChildrenChanged(FileName child, FileType newType)
     {
-        if (children != null && newType.equals(FileType.IMAGINARY))
+        if (children != null && newType.equals(FileType.IMAGINARY) && children != EMPTY_FTP_FILE_MAP )
         {
             try
             {
